@@ -1,0 +1,18 @@
+BEGIN
+ I n i t i a l i z e system components
+ S t a r t Arduino module and s e n s o r s
+ WHILE ( System i s A c t i v e )
+ IF ( Methane D e t e c t e d ) THEN
+ I g n i t e FireChamber
+ Heat B o i l e r
+ G e n e r a t e Steam
+ A c t i v a t e Dynamo and TEG
+ Convert Steam t o E l e c t r i c i t y
+ S t o r e Power i n B a t t e r y
+ ELSE
+ D i s p l a y ”No methane d e t e c t e d , system on s t a n d b y ”
+ ENDIF
+ Monitor S e n s o r s
+ Update D i s p l a y
+ ENDWHILE
+END
